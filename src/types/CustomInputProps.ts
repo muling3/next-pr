@@ -1,6 +1,7 @@
 export interface CustomInputProps {
     label: string
-    type: string
+    type?: string
     icon: string
-    placeholder: string
+    placeholder?: string
+    options?: string[]
 }
