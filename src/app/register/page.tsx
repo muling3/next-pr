@@ -13,8 +13,8 @@ const Register = () => {
         </h2>
       </div>
 
-      <div className="flex flex-col justify-center md:grid md:grid-cols-2 gap-2">
-        <div className="flex flex-col justify-center ">
+      <div className="flex flex-col justify-center">
+        <div className="grid grid-cols-2 gap-2 justify-center ">
           <CustomInput
             placeholder="Your firstname"
             icon="person"
@@ -30,7 +30,7 @@ const Register = () => {
           />
         </div>
 
-        <div className="flex flex-col justify-center ">
+        <div className="grid grid-cols-2 gap-2 justify-center ">
           <CustomInput
             placeholder="Your lastname"
             icon="person"
@@ -46,7 +46,7 @@ const Register = () => {
           />
         </div>
 
-        <div className="flex flex-col justify-center ">
+        <div className="grid grid-cols-2 gap-2 justify-center ">
           <CustomInput
             placeholder="you@example.com"
             icon="mail"
@@ -55,30 +55,38 @@ const Register = () => {
           />
 
           <CustomInput
-            placeholder=""
-            icon="visibility_off"
-            label="password"
-            type="password"
-          />
-        </div>
-
-        <div className="flex flex-col justify-center ">
-          <CustomInput
             placeholder="Your phonenumber"
             icon="phone_enabled"
             label="phonenumber"
             type="number"
           />
+        </div>
 
+        <div className="grid grid-cols-2 gap-2 justify-center">
+          <CustomInput
+            placeholder=""
+            icon="visibility_off"
+            label="password"
+            type="password"
+          />
+
+          <CustomInput
+            placeholder=""
+            icon="visibility_off"
+            label="confirm password"
+            type="password"
+          />
+        </div>
+
+        <div className="grid grid-cols-2 gap-2 justify-center">
           <CustomSelectInput
             icon="agender"
             label="gender"
             options={["male", "female"]}
           />
         </div>
-        
       </div>
-      
+
       <CustomButton title="Sign Up" navigateTo={"/login"} />
 
       <div className="w-full my-2 py-1 flex justify-between items-center">
